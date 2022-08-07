@@ -1,0 +1,15 @@
+/* components/squre/squre.wxss */
+
+.contain{
+
+    height:320rpx;
+    width: 100%;
+    border-radius: 8px;
+    background: #b2d6f3;
+   display: flex;
+}
+
+.top{
+  display: flex;  
+  flex-direction: row;  
+}

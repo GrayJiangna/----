@@ -1,0 +1,5 @@
+<!--components/searchinput/searchinput.wxml-->
+<view class="frame">
+<view class="photo"><icon type="search" size="30"></icon></view>
+<view class="title" >搜索</view>
+</view>

@@ -1,0 +1,8 @@
+<!--pages/search/search.wxml-->
+  <view class="frame">
+    <view class="photo"><icon type="search" size="30"></icon></view>
+    <view class="title" >请输入搜索内容</view>
+  </view>
+
+
+

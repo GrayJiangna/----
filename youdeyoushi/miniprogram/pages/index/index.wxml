@@ -1,0 +1,42 @@
+<!--index.wxml-->
+
+  <navigator url="../search/search">
+   <searchinput>
+   </searchinput>
+  </navigator>
+
+
+<!-- <navigator url= "../specific/specific">
+  <squre dataobj="{{dataobj}}"></squre>
+</navigator>   -->
+<!-- <button type="primary" bindtap="getData">点击获取数据</button>
+<view>{{dataobj.id}}</view> -->
+
+<!-- <view bindtap="getData">{{dataobj.id}}</view> -->
+
+
+
+<view class='a' wx:for="{{ne}}" wx:key="item"><!--wx:for是微信数据绑定的一种方式，该数组有多少数据就显示多少个view-->
+
+
+    <navigator url= "../specific/specific">
+  <view class="contain">
+      <view class="top">
+        <view class="touxiang">
+         <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <view class="id">
+         <open-data type="userNickName"></open-data>
+         <view>LV6</view>
+        </view>
+      </view>
+
+     <!-- <view class="label" wx:for="{{item.stes}}">{{item.stes[0]}}   </view>  -->
+    <view class="label">{{item.stes[0]}}--{{item.stes[1]}}</view>
+ 
+    <view class="title">{{item.demo}}</view>
+
+  </view>
+    </navigator>
+
+</view>

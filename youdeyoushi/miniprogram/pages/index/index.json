@@ -1,0 +1,9 @@
+
+
+{
+  "usingComponents": {
+    "cloud-tip-modal": "/components/cloudTipModal/index",
+    "searchinput":"../../components/searchinput/searchinput",
+    "squre":"../../components/squre/squre"
+  }
+}

@@ -2,7 +2,7 @@
 
 <view class="basic">
   <input class="input1" 
-      placeholder="请输入用户名" placeholder-class="input1-place">
+      placeholder="请输入用户名" placeholder-class="input1-place" maxlength="10">
       </input>
 <p>*姓名：</p>
 <view class="firstblank">

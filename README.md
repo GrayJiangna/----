@@ -1,3 +1,3 @@
 # BRIEF
 
-YouDeYouShi.
+YouDeYouShi

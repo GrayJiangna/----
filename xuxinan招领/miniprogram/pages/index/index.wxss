@@ -1,0 +1,17 @@
+.add{
+
+  position: fixed;
+  width:100rpx; 
+  height:100rpx;
+  bottom: 0rpx;
+  left: 350rpx;
+  font-size: 24rpx;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 100rpx;
+  bottom:140rpx;
+
+  }

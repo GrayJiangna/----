@@ -1,0 +1,49 @@
+<form  bindsubmit="btnSub">
+  <van-cell-group>
+  <van-field
+    value="{{ valueTheme }}"
+    label="标题"
+    placeholder="请输入标题"
+    border="{{ false }}"
+    bind:change="onChangeTheme"
+  />
+</van-cell-group>
+
+<!-- 描述信息 -->
+<van-cell-group>
+  <van-field
+    value="{{ valueContent }}"
+    label="描述信息"
+    placeholder="请输入描述信息"
+    border="{{ false }}"
+    bind:change="onChangeContent"
+  />
+</van-cell-group>
+<!-- 电话 -->
+
+
+
+
+<van-dropdown-menu>
+  <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" bind:change="changevalue" />
+</van-dropdown-menu>
+<!-- <van-action-sheet
+  show="{{ show }}"
+  actions="{{ actions }}"
+  bind:close="onClose"
+  bind:select="onSelect"
+/> -->
+
+<van-divider contentPosition="left">请上传图片</van-divider>
+
+<van-uploader
+  file-list="{{ imageFileList }}"
+  bind:after-read="afterRead"
+  multiple="{{true}}"
+  catch:delete="deleteImg"
+/>
+<view>
+  <van-button plain type="primary" form-type="submit" size="large">提交</van-button>
+</view>
+
+</form>

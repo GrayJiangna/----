@@ -1,0 +1,52 @@
+<!-- 排行榜 -->
+<van-notice-bar
+  left-icon="volume-o"
+  text="好人榜"
+/>
+<!-- 搜索 -->
+<van-search
+  value="{{ value }}"
+  label=""
+  placeholder="请输入搜索关键词"
+  use-action-slot
+  bind:change="onChange"
+  bind:search="onSearch"
+>
+  <view slot="action" bind:tap="onClick">搜索</view>
+</van-search>
+<!-- 选择 -->
+<van-dropdown-menu>
+  <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" bind:change="changevalue" />
+</van-dropdown-menu>
+<!-- 内容 -->
+<view wx:for="{{dbcontent}}" wx:key="index">
+<!-- <navigator url='../details/details?pics={{item.pics}}'> -->
+  <van-card
+  data-id="{{index}}"
+  tag="{{ item.kindname }}"
+  desc="{{ item.content }}"
+  title="{{ item.theme }}"
+  thumb="{{ item.pics[0] }}"
+  bindtap="jumpdetail"
+>
+  <view slot="footer">
+    <view> {{ item.date }}</view>
+  </view>
+</van-card>
+<!-- </navigator> -->
+  <!-- <van-card
+  
+  tag="{{ item.kindname }}"
+  desc="{{ item.content }}"
+  title="{{ item.theme }}"
+  thumb="{{ item.pics[0] }}"
+>
+  <view slot="footer">
+    <view> {{ item.date }}</view>
+  </view>
+</van-card> -->
+</view>
+<!-- 发布 -->
+<view class="add" bindtap="release">
+      发布
+  </view>

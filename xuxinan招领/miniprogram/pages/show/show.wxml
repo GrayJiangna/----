@@ -1,0 +1,10 @@
+
+<!-- <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" deletable="{{ true }}"/> -->
+
+<van-uploader
+  file-list="{{ imageFileList }}"
+  bind:after-read="afterRead"
+  multiple="{{true}}"
+  catch:delete="deleteImg"
+/>
+<button bindtap="turndb">上传</button>

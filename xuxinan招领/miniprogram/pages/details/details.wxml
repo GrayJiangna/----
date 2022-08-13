@@ -1,0 +1,8 @@
+<van-cell title="标题"  size="large" label="{{list[0].theme}} " icon="circle" />
+<van-cell title="物品种类"  size="large" label="{{list[0].kindname}} " icon="coupon-o" />
+<van-cell title="详细信息"  size="large" label="{{list[0].content}}" icon="label-o" />
+<van-cell title="联系方式"  size="large" label="还未开通此功能" icon="phone-o" />
+<div wx:for="{{list[0].pics}}">
+  <!-- <van-image width="150" height="150" src="{{item}}" fit="contain"/> -->
+  <image width="150" height="150" src="{{item}}" bindtap="previewImage" data-id="{{index}}" />
+  </div>

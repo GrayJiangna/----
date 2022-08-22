@@ -1,0 +1,33 @@
+/* pages/pic/pic.wxss */
+.image{
+  width:125px;
+  height: 90px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 30px;
+  margin-bottom: 10px;
+  border: 1px dashed;
+}
+
+.prevPic{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.delPic{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.uploadPic{
+  width:125px;
+  height: 90px;
+  box-sizing: border-box;
+  border: 1px dashed;
+  padding: 25px 40px;
+
+}

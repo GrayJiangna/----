@@ -1,0 +1,18 @@
+<!--pages/pic/pic.wxml-->
+<view class="Pic">
+  <view>{{text}}</view>
+  <view class="prevPic">
+    <view class="picItem" >
+        <image class="image" wx:for="{{prev}}" wx:key="index" src="{{item}}">
+          <view    bindtap="delBtn" data-index="{{index}}">
+        <image class="delPic" src="../../images/delPic.png"></image>
+      </view>
+        </image>
+    </view>
+  <view>
+  <image  class="uploadPic" bindtap="clickBtn" src="../../images/uploadPic.png"></image>
+  </view>
+  </view>
+
+  <button type="primary" bindtap="subBtn">提交</button>
+</view>
